@@ -1,3 +1,0 @@
-import {sqliteTable,text} from 'drizzle-orm/sqlite-core';
-export const profiles=sqliteTable('profiles',{id:text('id').primaryKey(),name:text('name').notNull(),title:text('title').notNull(),startDate:text('start_date').notNull().default(''),bio:text('bio').notNull(),responsibilities:text('responsibilities').notNull(),photo:text('photo').notNull(),deleted:text('deleted').notNull().default('0')});
-export const inquiries=sqliteTable('inquiries',{id:text('id').primaryKey(),firstName:text('first_name').notNull(),lastName:text('last_name').notNull(),business:text('business').notNull(),email:text('email').notNull(),service:text('service').notNull(),message:text('message').notNull(),createdAt:text('created_at').notNull()});
